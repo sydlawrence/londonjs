@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="echonest.js"></script>
+		<script src="Track.js"></script>
+
+	</head>
+	<body>
+
+		<form id="songSelectorOptions">
+			<p>
+				<label>
+					Min Danceability
+				</label>
+				<input type="range" id="min_danceability" step="0.1" min=0 max=1 /> 
+			</p>
+			<p>
+			<label>
+				Max Danceability
+			</label>
+			<input type="range" id="max_danceability" step="0.1" min=0 max=1 /> 
+			</p>
+			<p>
+			<label>
+				Min Energy
+			</label>
+			<input type="range" id="min_energy" step="0.1" min=0 max=1 /> 
+			</p>
+			<p>
+			<label>
+				Max Energy
+			</label>
+			<input type="range" id="max_energy" step="0.1" min=0 max=1 /> 
+			</p>
+			<p>
+			<label>
+				Min Hotttness
+			</label>
+			<input type="range" id="song_min_hotttnesss" step="0.1" min=0 max=1 />
+			</p>
+			<p>
+				<label>
+					Max Hotttness
+				</label> 
+				<input type="range" id="song_max_hotttnesss" step="0.1" min=0 max=1 /> 
+			</p>
+			<button type="submit">Save</button>
+
+		</form>
+
+		<h1>Track Suggestions</h1>
+		<div id="results"></div>
+	</body>
+</html>
